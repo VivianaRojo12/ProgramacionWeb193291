@@ -1,0 +1,12 @@
+<div *ngIf = "orders.length === 0">
+    <p>
+        Hay nada HOLA.
+    </p>
+</div>
+
+<div  *ngFor = "let order of orders" style = "padding: 13px;">
+    <p>
+        {{order.id}} 
+    </p>
+
+</div>

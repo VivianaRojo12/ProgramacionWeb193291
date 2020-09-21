@@ -1,1 +1,12 @@
-<p>landing-page works!</p>
+<div *ngIf = "products.length === 0">
+    <p>
+        Hay nada :( ).
+    </p>
+</div>
+
+<div  *ngFor = "let product of products" style = "padding: 13px;">
+    <p>
+        {{product.id}} | {{product.name}} | ${{product.price}}
+    </p>
+
+</div>
