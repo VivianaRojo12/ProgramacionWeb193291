@@ -19,10 +19,10 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.serviceService.getProduct("products/").subscribe((data : any[]) => {
+    /* this.serviceService.getProduct("products/").subscribe((data : any[]) => {
       console.log(data);
       this.products = data;
-    });
+    }); */
 
   }
 

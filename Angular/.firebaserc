@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "angular-deploy-1209"
+  },
+  "targets": {
+    "angular-deploy-1209": {
+      "hosting": {
+        "Angular": [
+          "angular-deploy-1209"
+        ]
+      }
+    }
   }
 }

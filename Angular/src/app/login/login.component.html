@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/cupcake.png"/>
-        <link rel="stylesheet" type="text/css" href="login.component.css">
-        <title>Sam´s Cakes</title>
-    </head>
-    <body>
-        <div class="animate__animated animate__zoomIn">
-            <div class="loginContainer">
-                
+<div class="body">
+    <div class="loginContainer">
+        <div class = "loginInfo">
+            <div  class="d-flex justify-content-center">
+                <img src="assets/img/cupcake.png" width="120px" height="120px" alt=""/>
+            </div>
+           
+            <h2> Sam´s Cakes </h2>
+            <div class="email">
+                <label> Email: </label> <br>
+                <input type="email" placeholder="Insert your email"><br><br>
+                <label> Password: </label><br>
+                <input type="password" placeholder="Insert your password">
+            </div>
+            <div class="buttoms">
+                <a (click) = "Google()" class="btnLoginG"><img src="assets/img/google.png" width="20px" height="20px"> 
+                    Login with Google
+                </a><br><br>
+                <button type="submit" class="btnLogin" routerLink="/register">Login</button>
+                <a routerLink="/register" class="btnRegister"> Register </a>
             </div>
         </div>
-    </body>
-</html>
+    </div>    
+</div>

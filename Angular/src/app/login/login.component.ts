@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { ServiceService} from '../service.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  constructor(private serviceService : ServiceService) { }
 
-  ngOnInit(): void {
+  Google() {
+    this.serviceService.getAuthGoogle();
   }
-
 }
