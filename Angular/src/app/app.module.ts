@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { OrderUpComponent } from './order-up/order-up.component';
-import { ProductComponent } from './product/product.component';
-import { SaleComponent } from './sale/sale.component';
-import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RegisterComponent } from './register/register.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    OrderUpComponent,
-    ProductComponent,
-    SaleComponent,
-    UserComponent
+    LoginComponent,
+    DashboardComponent,
+    RegisterComponent,
+    HeaderComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
-<div *ngIf = "products.length === 0">
+<!-- <div *ngIf = "products.length === 0">
     <p>
-        Hay nada :( 
+        No hay nada
     </p>
 </div>
 
@@ -9,4 +9,32 @@
         {{product.id}} | {{product.name}} | ${{product.price}}
     </p>
 
+</div>
+ -->
+ <div class="body">
+    <div class="tableCenter">
+        <table class="table">
+            <thead class="thead-dark">
+                <!-- thead La cabecera principal de la table -->
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NOMBRE DEL PRODUCTO</th>
+                    <th scope="col">PRECIO</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <!-- tbody es el cuerpo de los datos que se van a mostrar en mi tabla -->
+                <tr *ngFor="let product of products">
+                    <th scope="row">
+                        {{product.id}}
+                    </th>
+                    <td>{{product.name}} </td>
+                    <td>{{product.price}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
 </div>

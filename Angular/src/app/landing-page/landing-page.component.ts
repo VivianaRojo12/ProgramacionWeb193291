@@ -11,7 +11,9 @@ import { ServiceService } from '../service.service';
 //Clase Principal del Componente de la logica de negocio.
 export class LandingPageComponent implements OnInit {
 
+  
   products = [];
+  
 
   constructor(private serviceService : ServiceService) { }
 
