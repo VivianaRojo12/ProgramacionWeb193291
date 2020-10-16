@@ -15,6 +15,21 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Form
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+//Angular Material
+import { MatSliderModule } from '@angular/material/slider';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { from } from 'rxjs';
+import { ServiceComponent } from './service/service.component';
+import { TopComponent } from './NavTop/top/top/top.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -25,14 +40,26 @@ import { HeaderComponent } from './header/header.component';
     DashboardComponent,
     RegisterComponent,
     HeaderComponent,
-
+    ServiceComponent,
+    TopComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

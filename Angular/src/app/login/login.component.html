@@ -1,4 +1,4 @@
-<div class="body">
+<!-- <div class="body">
     <div class="loginContainer">
         <div class = "loginInfo">
             <div  class="d-flex justify-content-center">
@@ -21,4 +21,23 @@
             </div>
         </div>
     </div>    
+</div> -->
+
+<!-- Clase Nueva-->
+<div class="main-div">
+    <mat-card>
+        <form class="login-form" [formGroup]="loginFormGroup">
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+
+            <button class="example-full-width" [disabled]="loginFormGroup.invalid" mat-raised-button color="primary" (click)="login()">Aceptar</button>
+        </form>
+    </mat-card>
 </div>
