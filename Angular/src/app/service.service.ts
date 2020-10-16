@@ -10,13 +10,13 @@ import {Router} from '@angular/router';
 })
 export class ServiceService {
 
-  private RES_API_SERVER = "http://localhost:3000/"
+  private REST_API_SERVER = "http://localhost:3000/"
 
   constructor(private httpclient : HttpClient ) { }
 
- /*  public getProduct(nameEndPoint: String){
+  public getProduct(nameEndPoint: String){
     return this.httpclient.get(this.REST_API_SERVER + nameEndPoint);
-  } */
+  }
 
   /* constructor( private angularAuth : AngularFireAuth,  private router : Router) {}
     public getAuthGoogle(){

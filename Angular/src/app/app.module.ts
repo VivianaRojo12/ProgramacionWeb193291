@@ -30,6 +30,7 @@ import { ServiceComponent } from './service/service.component';
 import { TopComponent } from './NavTop/top/top/top.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
 
   ],
   providers: [],
