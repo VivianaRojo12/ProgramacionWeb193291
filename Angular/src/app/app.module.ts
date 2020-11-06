@@ -31,6 +31,10 @@ import { TopComponent } from './NavTop/top/top/top.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
+import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -43,6 +47,8 @@ import {MatTableModule} from '@angular/material/table';
     HeaderComponent,
     ServiceComponent,
     TopComponent,
+    AddComponent,
+    EditComponent,
   ],
 
   imports: [
@@ -60,7 +66,9 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatDialogModule,
 
   ],
   providers: [],

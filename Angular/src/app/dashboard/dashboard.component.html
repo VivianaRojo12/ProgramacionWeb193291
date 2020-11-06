@@ -83,37 +83,54 @@
 <br>
 <br>
 
-<h1>TABLA DE PRUEBA</h1>
+<h1>Informacion de Usuarios</h1>
 
 <br> 
 <div class="card-table">
+  <div class="buttons">
+    <button mat-raised-button color="warn" (click)="agregar()">Agregar Usuario</button>
+  </div>
+
+  <br>
+
   <mat-card class="table">
-    <table mat-table [dataSource]="dataSource" class="table-content">
+    <table mat-table [dataSource]="request" class="table-content">
   
       <!--- Note that these columns can be defined in any order.
             The actual rendered columns are set as a property on the row definition" -->
     
       <!-- Position Column -->
-      <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      <ng-container matColumnDef="fullName">
+        <th mat-header-cell *matHeaderCellDef> Nombre Completo </th>
+        <td mat-cell *matCellDef="let element"> {{element.fullName}} </td>
       </ng-container>
     
       <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Nombre del Producto </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Edad </th>
+        <td mat-cell *matCellDef="let element"> {{element.age}} </td>
       </ng-container>
     
       <!-- Weight Column -->
-      <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef> Precio </th>
-        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="update">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"> <button mat-raised-button color="accent" (click) = 'update(element)'> Modificar </button> </td>
       </ng-container>
     
-    
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"> <button mat-raised-button color="primary" (click) = 'delete(element.id)'> Eliminar </button> </td>
+      </ng-container>
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
+
+    
   </mat-card>
 </div>

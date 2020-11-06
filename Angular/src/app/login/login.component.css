@@ -109,20 +109,55 @@
 
   } */
 
-    
 .main-div {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/fondo2.jpg);
+ /*  background-repeat: no-repeat; */
+  background-size: cover;
+
 }
 
+h2{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(91, 42, 136);
+  text-shadow: 4px 4px 3px rgb(124, 122, 122);
+  font-family: fantasy;
+}
+
+img{
+  margin: 0px auto 10px;
+  display: block;
+}
+
+
 .login-form {
-  min-width: 150px;
+  min-height: 350px;
   max-width: 300px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .example-full-width {
+  top: 10px;
   width: 100%;
+  margin-top: 3%;
+}
+
+.buttom-login{
+  background-color: rgb(8, 8, 70);
+  color: #ffffff;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.buttom-login-google{
+  background-color: rgb(42, 114, 143);
+  color: #ffffff;
+  margin-top: 5%;
+  width: 100%;
+  
 }

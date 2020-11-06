@@ -1,0 +1,34 @@
+<div mat-dialog-content>
+  <form class="edit-form" [formGroup]="editFormGroup">
+    <h2>Ingrese los siguientes datos.</h2>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Fullname:</mat-label>
+        <input matInput placeholder="" formControlName="fullName" />
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Age:</mat-label>
+        <input matInput placeholder="" formControlName="age" />
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Email:</mat-label>
+        <input matInput placeholder="" formControlName="email" />
+      </mat-form-field>
+    </p>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="close()">
+      Cancelar
+    </button>
+    <button mat-raised-button color="warn" (click)="updateUser()">
+      Modificar
+    </button>
+  </div>
+</div>

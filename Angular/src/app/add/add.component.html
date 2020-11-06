@@ -1,0 +1,31 @@
+<div class="main-div">
+  <mat-card>
+    <form class="add-form" [formGroup]="addFormGroup">
+        <h2> Ingrese los siguientes datos. </h2>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Fullname:</mat-label>
+          <input matInput placeholder="" formControlName="fullName" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Age:</mat-label>
+          <input matInput placeholder="" formControlName="age"/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Email:</mat-label>
+          <input matInput placeholder="" formControlName="email"/>
+        </mat-form-field>
+      </p>
+      <section>
+        <div class="buttons">
+          <button mat-raised-button color="primary" (click)="regresar()">Cancelar</button>
+          <button mat-raised-button color="warn" (click)="post()" [disabled]="addFormGroup.invalid">Agregar</button>
+        </div>
+      </section>
+    </form>
+  </mat-card>
+</div>

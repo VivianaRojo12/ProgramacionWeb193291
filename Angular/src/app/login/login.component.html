@@ -27,6 +27,10 @@
 <div class="main-div">
     <mat-card>
         <form class="login-form" [formGroup]="loginFormGroup">
+
+            <img src="assets/img/cupcake.png" width="120px" height="120px" alt=""/>
+            <h2> Sam's Cakes </h2>
+
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="Email" formControlName="email">
@@ -37,7 +41,7 @@
                 <input matInput placeholder="Password" formControlName="password">
             </mat-form-field>
 
-            <button class="example-full-width" [disabled]="loginFormGroup.invalid" mat-raised-button color="primary" (click)="login()">Aceptar</button>
+            <button class="buttom-login" [disabled]="loginFormGroup.invalid" mat-raised-button color="primary" (click)="login()">Iniciar Sesion</button><br>
+            <!-- <a class="buttom-login-google" [disabled]="loginFormGroup.valid" mat-raised-button color="primary" (click)="login()"><img src="assets/img/google.png" width="20px" height="20px">Iniciar Sesion con Google</a> -->
         </form>
     </mat-card>
-</div>
