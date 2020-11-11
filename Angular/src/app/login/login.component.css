@@ -125,7 +125,7 @@ h2{
   font-size: 40px;
   color: rgb(91, 42, 136);
   text-shadow: 4px 4px 3px rgb(124, 122, 122);
-  font-family: fantasy;
+  font-family: 'Poppins', sans-serif;
 }
 
 img{
@@ -136,7 +136,7 @@ img{
 
 .login-form {
   min-height: 350px;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   border-radius: 15px;
 }
@@ -144,20 +144,38 @@ img{
 .example-full-width {
   top: 10px;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 4%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
-.buttom-login{
-  background-color: rgb(8, 8, 70);
+.button-login{
+  font-family: 'Poppins', sans-serif;
   color: #ffffff;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-.buttom-login-google{
+
+.sign-up-class a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 40px 0px;
+}
+
+.sign-up-class a:hover {
+  color: red;
+}
+
+
+/* .button-login-google{
   background-color: rgb(42, 114, 143);
   color: #ffffff;
-  margin-top: 5%;
+  margin-top: 0;
   width: 100%;
-  
-}
+} */

@@ -41,7 +41,11 @@
                 <input type="password" matInput placeholder="Password" formControlName="password">
             </mat-form-field>
 
-            <button class="buttom-login" [disabled]="loginFormGroup.invalid" mat-raised-button color="primary" (click)="login()">Iniciar Sesion</button><br>
+            <button class="button-login" [disabled]="loginFormGroup.invalid" mat-raised-button color="primary" (click)="login()">Sign in</button><br>
+            <div class="sign-up-class">
+                <a class="register" routerLink="/register"> Don't have an account yet? Sign up here. </a>
+            </div>
             <!-- <a class="buttom-login-google" [disabled]="loginFormGroup.valid" mat-raised-button color="primary" (click)="login()"><img src="assets/img/google.png" width="20px" height="20px">Iniciar Sesion con Google</a> -->
         </form>
     </mat-card>
+</div>

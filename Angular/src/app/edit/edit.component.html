@@ -1,22 +1,22 @@
 <div mat-dialog-content>
   <form class="edit-form" [formGroup]="editFormGroup">
-    <h2>Ingrese los siguientes datos.</h2>
+    <h2>Insert the next datas.</h2>
     <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Fullname:</mat-label>
-        <input matInput placeholder="" formControlName="fullName" />
+      <mat-form-field appearance="legacy" class="full-width">
+        <mat-label>Fullname</mat-label>
+        <input matInput placeholder="" type="text" formControlName="fullName" />
       </mat-form-field>
     </p>
     <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Age:</mat-label>
-        <input matInput placeholder="" formControlName="age" />
+      <mat-form-field appearance="legacy" class="full-width">
+        <mat-label>Age</mat-label>
+        <input matInput placeholder="" type="number" formControlName="age" />
       </mat-form-field>
     </p>
     <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Email:</mat-label>
-        <input matInput placeholder="" formControlName="email" />
+      <mat-form-field appearance="legacy" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="" type="email" formControlName="email" />
       </mat-form-field>
     </p>
   </form>
@@ -24,11 +24,7 @@
 
 <div mat-dialog-actions>
   <div class="buttons">
-    <button mat-raised-button color="primary" (click)="close()">
-      Cancelar
-    </button>
-    <button mat-raised-button color="warn" (click)="updateUser()">
-      Modificar
-    </button>
+    <button mat-raised-button color="primary" (click)="close()">Cancel</button>
+    <button mat-raised-button color="warn" (click)="updateUser()">Modify</button>
   </div>
 </div>

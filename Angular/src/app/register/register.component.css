@@ -1,20 +1,89 @@
-.body {
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    width: 100%;
+.main-div {
     height: 100vh;
+    background-image: url(../login/images/fondo2.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div, .name-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../login/images/fondo2.jpg);
-    background-size: cover;
 }
 
-.login-container {
-    background-color: white;
-    width: 700px;
-    height: 550px;
-    border-radius: 20px;
+.register-container {
+    border-radius: 35px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.register-form {
+    min-width: 150px;
+    max-width: 450px;
+    min-height: 350px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.name-container {
+    padding: 20px;
+}
+
+.name-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.labels {
+    padding: 15px 20px;
+}
+
+.labels mat-label input {
+    font-family: 'Nunito', sans-serif;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 47.5%;
+}
+
+.buttom-container {
+    padding: 30px;
+    margin: 10px 0px;
+}
+
+.buttom-container button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.signIn a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 40px 0px;
+}
+
+.text-no-decorated {
+    text-decoration: none;
+}
+
+.signIn a:hover {
+    color: red;
+}
+
+.bg-primary {
+    background-color: #00ff55;
+}
+
+.buttom-container button:not([disabled]):hover {
+    background-color: #8100cc;
 }
