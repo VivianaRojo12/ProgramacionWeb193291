@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthServiceService {
 
-  api: String = 'https://backendpw.herokuapp.com/';
+  api: String = 'http://vivi12rojoweb.ddns.net/';
   constructor(private http: HttpClient) { }
 
   isAuthenticated(): boolean {
